@@ -84,13 +84,13 @@ const internQuestions = [{
 ];
 
 //This function writes a new HTML file 
-function writeToFile(fileName, data) {
-    fs.writeFileSync(fileName, data, err => {
-        if (err) {
-            console.error(err);
-        }
-    });
-}
+// function writeToFile(fileName, data) {
+//     fs.writeFileSync(fileName, data, err => {
+//         if (err) {
+//             console.error(err);
+//         }
+//     });
+// }
 
 function managerFunction() {
     inquirer
@@ -163,12 +163,9 @@ function buildTeam() {
     }
     fs.appendFileSync('team.html', `
 </body>
+
 </html>
     `)
 }
 
-function init() {
-    managerFunction()
-}
-
-init();
+managerFunction()
