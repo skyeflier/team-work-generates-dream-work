@@ -1,0 +1,42 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    height: 250px;
+    width: 250px;
+    background-color: teal;
+    justify-content: space-evenly;
+    padding: 25px;
+    margin: 10px;
+    border-top-right-radius: 75px;
+    border-bottom-right-radius: 75px;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+    border-color: goldenrod;
+    border-style: solid;
+    border-width: 10px;
+}
+
+/* background-color: peru;*/
+
+/* border-color: goldenrod; */
+
+/* HOW DO I START THE QUESTIONS  */
+/* WHERE DO I SEE WHAT THIS WILL LOOK LIKE? */
+/* HOW DO I RUN THE TESTS?? */
+
+/* MAKE SURE THESE WORK: 
+
+THEN my default email program opens and populates the TO field of the email with the address
+WHEN I click on the GitHub username
+THEN that GitHub profile opens in a new tab */

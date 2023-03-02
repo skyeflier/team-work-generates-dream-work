@@ -146,24 +146,31 @@ function buildTeam() {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
     `);
 
     for (let i = 0; i < team.length; i++) {
-
+        //ADD CLASS HERE AND ROWS BELOW CLASS=CARD
+        //ADD TO FUNCTION AFTER GITHUB SO PEOPLE HAVE TO PUT A CERTAIN FORMAT
         fs.appendFileSync('team.html', `
+    <h2>Our Team</h2>
+    <div class="container">
     <div class="card">
     <h3>Name: ${team[i].name}</h3>
     <p>ID: ${team[i].id}</p>
-    <p>Email: ${team[i].email}</p>
+    <p>Email: <a href=mailto:${team[i].email}>${team[i].email}</a></p>
+    <p>Office: ${team[i].officeNumber}</p>
+    <p>School: ${team[i].school}</p>
+    <p>GitHub: <a href=https://github.com/${team[i].gitHub}>${team[i].gitHub}</a></p>
+</div>
 </div>
     `)
     }
     fs.appendFileSync('team.html', `
-</body>
-
+</body
 </html>
     `)
 }
