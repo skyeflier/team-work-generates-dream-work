@@ -153,8 +153,8 @@ function buildTeam() {
     `);
 
     for (let i = 0; i < team.length; i++) {
-        //ADD CLASS HERE AND ROWS BELOW CLASS=CARD
-        //ADD TO FUNCTION AFTER GITHUB SO PEOPLE HAVE TO PUT A CERTAIN FORMAT
+        //FUTURE - ADD TO FUNCTION AFTER GITHUB SO PEOPLE HAVE TO PUT A CERTAIN FORMAT
+        //FUTURE - MAKE IT SO ONLY CERTAIN CRITERIA ARE ON CERTAIN CARDS
         fs.appendFileSync('team.html', `
     <h2>Our Team</h2>
     <div class="container">
